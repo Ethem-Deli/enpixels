@@ -221,6 +221,120 @@ h1{ font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.1; margin: 8px 0 12px; }
   gap: 0.75rem;
 }
 .site-logo {
-  height: 40px;
-  width: auto;
+  height: 100px;
+  width: 100px;
+}
+
+.hero-ad .hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-ad .hero-copy {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+.hero-ad .actions {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.featured-products {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.product-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 0.5rem;
+  width: 100px;
+  transition: box-shadow 0.2s;
+}
+.product-thumb img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.product-thumb span {
+  font-size: 0.95rem;
+  text-align: center;
+}
+.product-thumb:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+.hero-ad .hero-art {
+  flex: 1 1 350px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+@media (max-width: 900px) {
+  .hero-ad .hero-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-ad .hero-art, .hero-ad .hero-copy {
+    min-width: 0;
+    width: 100%;
+  }
+  .featured-products {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.hero-banner .hero-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+.hero-banner .hero-copy {
+  flex: 1 1 350px;
+  min-width: 300px;
+}
+.hero-banner .actions {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+}
+.hero-banner .hero-art {
+  flex: 1 1 350px;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-video {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+@media (max-width: 900px) {
+  .hero-banner .hero-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .hero-banner .hero-art, .hero-banner .hero-copy {
+    min-width: 0;
+    width: 100%;
+  }
 }

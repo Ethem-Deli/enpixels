@@ -1,0 +1,12 @@
+| File                             | Purpose                                                         |
+| -------------------------------- | --------------------------------------------------------------- |
+| **server.py**                    | Starts the FastAPI app, includes routers, CORS, and event hooks |
+| **app/db/connection.py**         | Handles async MongoDB connection (Motor client)                 |
+| **app/models/product_model.py**  | Pydantic schema for product data                                |
+| **app/routes/product_routes.py** | CRUD endpoints: create, read, update, delete products           |
+| **app/core/config.py**           | Loads `.env` settings safely using `python-dotenv`              |
+| **app/core/security.py**         | Provides `bcrypt` password hashing and verification             |
+| **app/auth/jwt_handler.py**      | JWT encode/decode logic for authentication                      |
+
+| **app/utils/seed_data.py**       | Script to preload sample product data                           |
+| **tests/test_api.py**            | Example test using `pytest` to verify endpoints                 |
